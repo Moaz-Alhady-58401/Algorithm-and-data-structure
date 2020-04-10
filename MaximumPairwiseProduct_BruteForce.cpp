@@ -45,6 +45,7 @@ long long FastMaxPairwiseProduct(const vector<int>& numbers)
 
 int main ()
 {
+	//stress test
 	/*while (true)
 	{
 		int n = ((rand() % 10000) +2) ;    //random between 2 ---> 10 (%)  ****** rand() % 100;         //the range 0 to 99
