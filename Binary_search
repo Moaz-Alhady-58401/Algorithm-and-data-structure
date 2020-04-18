@@ -2,6 +2,8 @@
 
 using namespace std ;
 
+int moaz_binary_search(int the_number , vector<int> vect) ;
+
 int main ()
 {
     vector<int> vec ;
@@ -17,7 +19,7 @@ int main ()
     vec.push_back(30);
     vec.push_back(35);
 
-    int the_index = moaz_binary_search(99,vec);
+    int the_index = moaz_binary_search(7,vec);
     cout<<the_index ;
 
     return 0;
