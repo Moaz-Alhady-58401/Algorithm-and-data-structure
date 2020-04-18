@@ -1,0 +1,51 @@
+#include <bits/stdc++.h>
+
+using namespace std ;
+
+int main ()
+{
+    vector<int> vec ;
+    vec.push_back(1);
+    vec.push_back(5);
+    vec.push_back(7);
+    vec.push_back(9);
+    vec.push_back(10);
+    vec.push_back(15);
+    vec.push_back(20);
+    vec.push_back(25);
+    vec.push_back(28);
+    vec.push_back(30);
+    vec.push_back(35);
+
+    int the_index = moaz_binary_search(99,vec);
+    cout<<the_index ;
+
+    return 0;
+}
+
+int moaz_binary_search(int the_number , vector<int> vect)
+{
+    int heigh = 10 ;
+    int low = 0 ;
+
+    while (low <= heigh)
+    {
+        int mid = (heigh + low)/2 ;
+        int guess = vect[mid] ;
+
+        if (guess == the_number)
+        {
+            return mid ;
+        }
+
+        else if (guess < the_number)
+        {
+            low = mid ;
+        }
+
+        else if (guess > the_number )
+        {
+            heigh = mid ;
+        }
+    }
+}
